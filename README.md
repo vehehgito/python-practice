@@ -3,6 +3,12 @@
 ## Purpose of this repository
 Repository for storing programs from my practice with Python. All the resources used to learn will be stored in the Resources folder.
 
+## Tools used for learning
+- Visual Studio Code
+- PowerShell 9
+- Github and Github Copilot
+- Thonny
+
 ## Python Command Line
 Python Command Line invokation exists with the format:
 
