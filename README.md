@@ -28,11 +28,6 @@ python -m ensurepip --upgrade
 pip install --upgrade pip
 ```
 
-### Creating a virtual environment for dependencies (Python 3.4 and above)
-```
-python -m venv venv
-```
-
 ### Creating a requirements.txt file
 ```
 pip freeze > requirements.txt
@@ -118,6 +113,12 @@ pip install --upgrade SomePackage --upgrade-strategy=only-if-needed
 ## Virtual Environment Commands
 
 ### Activating the virtual environment
+
+### Creating a virtual environment for dependencies (Python 3.4 and above)
+```
+python -m venv venv
+```
+
 #### In cmd.exe
 ```
 venv\Scripts\activate.bat
