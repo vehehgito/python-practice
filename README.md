@@ -9,6 +9,30 @@ Repository for storing programs from my practice with Python. All the resources 
 - Github and Github Copilot
 - Thonny
 
+## Executing a program which contains the requirements.txt file
+### Installing Package Installer for Python (PIP)
+```
+python -m ensurepip --upgrade
+```
+### Upgrading PIP
+```
+pip install --upgrade pip
+```
+### Creating a virtual environment for dependencies (Python 3.4 and above)
+```
+python -m venv venv
+```
+### Activating the virtual environment
+#### In cmd.exe
+```
+venv\Scripts\activate.bat
+```
+
+#### In PowerShell
+```
+venv\Scripts\Activate.ps1
+```
+
 ## Python Command Line
 Python Command Line invokation exists with the format:
 
@@ -112,13 +136,12 @@ pip install --upgrade SomePackage --upgrade-strategy=only-if-needed
 
 ## Virtual Environment Commands
 
-### Activating the virtual environment
-
 ### Creating a virtual environment for dependencies (Python 3.4 and above)
 ```
 python -m venv venv
 ```
 
+### Activating the virtual environment
 #### In cmd.exe
 ```
 venv\Scripts\activate.bat
