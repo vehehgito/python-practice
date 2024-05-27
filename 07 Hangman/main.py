@@ -109,4 +109,3 @@ while guesses > 0:
 
 if guesses == 0:
     print("You lose! The word was: " + word)
-
