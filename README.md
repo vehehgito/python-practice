@@ -7,7 +7,8 @@ Repository for storing programs from my practice with Python. All the resources 
 - Visual Studio Code
 - PowerShell 9
 - Github and Github Copilot
-- Thonny
+- [Thonny](https://thonny.org/)
+- [Python Tutor](https://pythontutor.com/)
 
 ## Executing a program which contains the requirements.txt file
 ### Installing Package Installer for Python (PIP)
