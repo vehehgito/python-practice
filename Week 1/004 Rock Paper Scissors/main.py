@@ -42,21 +42,23 @@ match choice:
         exit()
 
 print("Computer chose:")
-computer_choice = random.randint(0,2)
+computer_choice = str(random.randint(0,2))
 match computer_choice:
-    case 0:
+    case "0":
         print(rock)
-    case 1:
+    case "1":
         print(paper)
-    case 2:
+    case "2":
         print(scissors)
 
-if choice == "0" and computer_choice == 2:
+if choice == "0" and computer_choice == "2":
     print("You win!")
-elif choice == "1" and computer_choice == 0:
+elif choice == "1" and computer_choice == "0":
     print("You win!")
-elif choice == "2" and computer_choice == 1:
+elif choice == "2" and computer_choice == "1":
     print("You win!")
 elif choice == computer_choice:
     print("It's a draw!")
+else:
+    print("You lose!")
 
