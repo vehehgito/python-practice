@@ -43,6 +43,7 @@ def main():
     """Main function."""
 
     game()
+    
     play_again = input("Do you want to play again? Type 'yes' or 'no': ").lower()
     
     while play_again == "yes":
