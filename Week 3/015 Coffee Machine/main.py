@@ -33,7 +33,7 @@ def coin_to_usd():
     return coins_value
 
 
-def is_transaction_succesful(user_choice):
+def is_transaction_successful(user_choice):
     """Args: str(). Returns bool(). Calculates the cost of the beverage chosen by the customer."""
     cost = MENU[user_choice]["cost"]
     entered_money = coin_to_usd()
@@ -48,20 +48,20 @@ def is_transaction_succesful(user_choice):
         change = round(entered_money - cost, 2)
         print(f"Here is ${change} in change.")
         return True
-        
 
 
 def choice():
-    """Makes the customer choose from the 3 beverage options (1, 2, 3) and the machine operator from 2 more options which either returns the current resources left in the machine (0), or turns off the machine. (-1)"""
+    """Makes the customer choose from the 3 beverage options (1, 2, 3)
+    and the machine operator from 2 more options which either returns the current resources left in the machine (0),
+    or turns off the machine. (-1)"""
     
-    user_choice = int(input(
-"""
+    user_choice = int(input("""
 What would you like to drink today?
 1. espresso - $0.5
 2. latte - $1.5
 3. cappuccino - $2.0
 (0 for report and -1 to quit.
-    
+   
 """))
 
     if user_choice == 0:
@@ -77,7 +77,7 @@ What would you like to drink today?
         drink = MENU[user_choice]
 
         if is_resource_sufficient(drink["ingredients"]):
-            if is_transaction_succesful(user_choice):
+            if is_transaction_successful(user_choice):
                 for item in drink["ingredients"]:
                     resources[item] -= drink["ingredients"][item]
                 print(f"Here is your {user_choice}. Enjoy!")
